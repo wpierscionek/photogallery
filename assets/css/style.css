@@ -4,7 +4,24 @@
 	list-style: none;
 	text-decoration: none;
 }
+body{
+}
 #container {
 	width: 1920px;
 	margin: 0px auto;
+}
+.navbar {
+	background-color:  white;
+}
+.jumbotron {
+	background-color: white;
+}
+.well-lg {
+	border-color: green;
+}
+.col-md-3 {
+	
+}
+.col-md-12 {
+	background-color: #ddd;
 }
