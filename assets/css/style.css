@@ -6,6 +6,9 @@
 }
 body{
 }
+button {
+	margin: 5px 0px 0px 5px;
+}
 #container {
 	width: 1920px;
 	margin: 0px auto;
@@ -13,13 +16,20 @@ body{
 .navbar {
 	background-color:  white;
 }
-.jumbotron {
-	background-color: white;
+.navbar h3 {
+	font-family: ;
+	font-size: 30px;
+	margin-right: 50px;
+	padding-bottom: 10px;
+}
+.navbar img {
+	margin: 10px 0px 0px 20px;
 }
 .well-lg {
 	border-color: green;
 }
 .col-md-3 {
+	margin-top: 10px;
 	
 }
 .col-md-12 {
