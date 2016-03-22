@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
@@ -11,8 +11,8 @@
 		<div id="container">
 			<nav class="navbar navbar-default text-right">
 				<img alt="Brand" src="assets/images/icons/logo.png" class="img-responsive">
-				<h3 class="glyphicon glyphicon-thumbs-up"> Likes</h3>
-				<h3 class="glyphicon glyphicon-folder-open"> Pictures</h3>
+				<h3 id="like"class="glyphicon glyphicon-thumbs-up"> <span>Likes</span></h3>
+				<h3 id ="pictures"class="glyphicon glyphicon-folder-open"> <span>Pictures</span></h3>
 				<div class="container-fluid">
 				</div>
 			</nav>
@@ -20,11 +20,12 @@
 				<div class="row">
 					<div class="col-md-3">
 						<img src="assets/images/pic1.jpg" class="img-responsive img-thumbnail" alt="" width="400px" height="300px" >
-						<button type="button" class="btn btn-success glyphicon glyphicon-thumbs-up"> Like</button>
+						<button id="add" type="button" class="btn btn-success glyphicon glyphicon-thumbs-up"> Like</button>
 					</div>
 					<div class="col-md-3">
 						<img src="assets/images/pic2.jpg" class="img-responsive img-thumbnail" alt=""width="400px" height="300px">
 						<button type="button" class="btn btn-success glyphicon glyphicon-thumbs-up"> Like</button>
+
 					</div>
 					<div class="col-md-3">
 						<img src="assets/images/pic1.jpg" class="img-responsive img-thumbnail" class="thumbnail" alt="" width="400px" height="300px" >
@@ -73,11 +74,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<d.jiv class="col-md-12">
+				<div class="col-md-12">
 				<p class="text-center">Wojciech Pierscionek 2015 copyright</p>
 			</div>
 		</div>
 	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
 	<script src="assets/javascript/logic.js"></script>
 </body>
 </html>
