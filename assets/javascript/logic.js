@@ -2,6 +2,10 @@ $(document).ready(function() {
     var likes = 0;
     // console.log(likes);
     var totalPhotos = 0;
+    // disables right click on pictures
+    $("img").bind("contextmenu", function() {
+        return false;
+    });
     // click function for adding likes//
     function addLikes() {
         $(".btn-danger").one("click", function() {
