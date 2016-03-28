@@ -18,7 +18,7 @@ $(document).ready(function() {
     };
     addLikes();
     //find total pictures in the document and display the number
-    var pictures = document.body.getElementsByTagName("img");
+    var pictures = document.body.getElementsByClassName("example-image");
     for (var i = 0; i < pictures.length; i++) {
         // console.log(pictures);
         totalPhotos++;
