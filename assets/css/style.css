@@ -3,8 +3,19 @@
 	padding: 0px;
 	list-style: none;
 	text-decoration: none;
+	background-color: #3B3634;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3{
+	color: white;
 }
 body{
+
 }
 button {
 	margin: 5px 0px 0px 5px;
@@ -13,25 +24,33 @@ button {
 	width: 1920px;
 	margin: 0px auto;
 }
+.like {
+	color: #3BFF34;
+}
+.pictures {
+	color: #3BFF34;
+}
 .navbar {
-	background-color:  white;
+	/*text-align: right;*/
+	background-color:  #3B3634;
 }
 .navbar h3 {
+	margin-right: 60px;
 	font-family: ;
 	font-size: 30px;
-	margin-right: 50px;
 	padding-bottom: 10px;
-}
-.navbar img {
-	margin: 10px 0px 0px 20px;
+	color: white;
+	/*padding-left: 10px;*/
 }
 .well-lg {
-	border-color: green;
+	margin-top: 50px;
+	background-color: #3B3634;
 }
 .col-md-3 {
 	margin-top: 10px;
 	
 }
 .col-md-12 {
-	background-color: #ddd;
+	height: 100px;
+	background-color: #3B3634;
 }
