@@ -3,7 +3,6 @@
 	padding: 0px;
 	list-style: none;
 	text-decoration: none;
-	background-color: #3B3634;
 }
 h1 {
 
@@ -30,6 +29,9 @@ button {
 .pictures {
 	color: #3BFF34;
 }
+#signin {
+	margin-top: 20px;
+}
 .navbar {
 	/*text-align: right;*/
 	background-color:  #3B3634;
@@ -40,7 +42,6 @@ button {
 	font-size: 30px;
 	padding-bottom: 10px;
 	color: white;
-	/*padding-left: 10px;*/
 }
 .well-lg {
 	margin-top: 50px;
