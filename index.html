@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title>wpgallery</title>
 		<link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
-		<script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/lightbox.min.css">
@@ -12,28 +11,22 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="register">
-				<input id="email">Email</input>
-				<input id="password">Password</input>
-				<button id="registerButton">Register</button>
+			<nav class="navbar navbar-default navbar-fixed-top text-right">
+				<form id="signin" class="navbar-form navbar-left" role="form">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+				<h3 class="glyphicon glyphicon-thumbs-up">&nbsp;Likes:&nbsp;<span class="like"></span></h3>
+				<h3 class="glyphicon glyphicon-folder-open">&nbsp;Pictures:&nbsp;<span class="pictures"></span></h3>
 			</div>
-			<!-- <nav class="navbar navbar-default navbar-fixed-top text-right">
-					<form id="signin" class="navbar-form navbar-left" role="form">
-							<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-									<input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
-							</div>
-							<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-									<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-							</div>
-							<button type="submit" class="btn btn-primary">Login</button>
-					</form>
-					<h3 class="glyphicon glyphicon-thumbs-up">&nbsp;Likes:&nbsp;<span class="like"></span></h3>
-					<h3 class="glyphicon glyphicon-folder-open">&nbsp;Pictures:&nbsp;<span class="pictures"></span></h3>
-			</nav> -->
-		</div>
-		
+		</nav>
 		<div class="row">
 			<div class="col-md-3">
 				<figure class="effect-lily">
@@ -168,45 +161,5 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="assets/javascript/lightbox-plus-jquery.min.js"></script>
 		<script src="assets/javascript/logic.js"></script>
-		<script>
-		 var ref = new Firebase("https://wildgallery.firebaseio.com");
-        var authClient = new FirebaseAuthClient(ref, function(error, user) {
-        if (error) {
-        alert(error);
-        return;
-        }
-        if (user) {
-        // User is already logged in.
-        doLogin(user);
-        } else {
-        // User is logged out.
-        showLoginBox();
-        }
-        });
-        function showLoginBox() {
-        // Do whatever DOM operations you need to show the login/registration box.
-        $("#registerButton").on("click", function() {
-        var email = $("#email").val();
-        var password = $("#password").val();
-        authClient.createUser(email, password, function(error,  user) {
-        if (!error) {
-        doLogin(user);
-        } else {
-        alert(error);
-        }
-        });
-        });
-        }
-        // function showLoginBox() {
-        // // Do whatever DOM operations you need to show the login/registration box.
-        // $("#loginButton").on("click", function() {
-        // authClient.login("password", {
-        // email: $("#email").val(),
-        // password: $("#password").val(),
-        // rememberMe: $("#rememberCheckbox").val()
-        // });
-        // });
-        // }
-        </script>
 	</body>
 </html>
