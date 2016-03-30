@@ -25,9 +25,8 @@ body {
 	color: white;
 }
 .col-md-3 {
-	margin-top: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
+margin: 0;
+padding: 0;
 }
 .col-md-12 {
 	height: 100px;
@@ -40,8 +39,8 @@ figure {
 	float: left;
 	overflow: hidden;
 	width: 100%;
-	min-width: 300px;
-	max-width: 550px;
+	min-width: auto;
+	max-width: auto;
 	text-align: center;
 	cursor: pointer;
 }
