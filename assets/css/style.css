@@ -24,6 +24,16 @@ body {
 	padding-bottom: 10px;
 	color: white;
 }
+.navbar p, a {
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 5px;
+  color: white;
+}
+.navbar a:hover {
+  color: #3BFF34;
+  text-decoration: none;
+}
 .col-md-3 {
 padding: 5px;
 margin: 0px;
