@@ -37,27 +37,3 @@ dataBase.on("value", function(snapshot) {
     $(".like").html(snapshot.val().likes);
     $(".pictures").html(snapshot.val().photos);
 });
-//login
-var listRef = null;
-var userData = null;
-var timer = null;
-
-    var addUserName = function(userid) {
-        var name = $("#name").val();
-        if(!name)
-            name = userid;
-        var userRef = new Firebase("https://tester09.firebaseio.com/users/" + userid);
-        userRef.set({
-            full_name: name
-        },
-
-        function(error) {
-            if (error) {
-                console.log("Error adding user data:", error);
-                $("#signup-btn").parent().find('.status').html("Error adding user data:" + error).show();
-            } else {
-                console.log("Successfully added user data for");
-                $(".nav.navbar-nav > li > a[data-target='#login']").click();
-            }
-        });
-    }
